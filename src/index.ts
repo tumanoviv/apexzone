@@ -1,7 +1,7 @@
-import { greetUser } from '$utils/greet';
+// src/index.ts
+import './index.css';
 
-window.Webflow ||= [];
-window.Webflow.push(() => {
-  const name = 'John Doe';
-  greetUser(name);
+const button = document.querySelector('.button');
+button.addEventListener('click', () => {
+  document.body.style.overflow = 'hidden';
 });
