@@ -1,4 +1,15 @@
+@media screen and (max-width: 767px) {
+  :root {
+    --size--heading-height: 50px;
+  }
+}
+
 html,
 body {
   scrollbar-gutter: stable;
+}
+
+.hero {
+  height: calc(100vh - var(--size--heading-height));
+  min-height: 600px;
 }
